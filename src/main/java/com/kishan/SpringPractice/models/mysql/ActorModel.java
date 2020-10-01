@@ -1,4 +1,4 @@
-package com.kishan.SpringPractice.models.actor;
+package com.kishan.SpringPractice.models.mysql;
 
 /*
 * ActorModel for the Database Object
