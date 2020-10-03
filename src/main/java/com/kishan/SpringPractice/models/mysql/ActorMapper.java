@@ -1,4 +1,4 @@
-package com.kishan.SpringPractice.models.actor;
+package com.kishan.SpringPractice.models.mysql;
 
 
 import org.springframework.jdbc.core.RowMapper;

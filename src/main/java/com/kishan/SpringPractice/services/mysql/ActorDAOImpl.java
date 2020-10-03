@@ -1,5 +1,7 @@
-package com.kishan.SpringPractice.models.actor;
+package com.kishan.SpringPractice.services.mysql;
 
+import com.kishan.SpringPractice.models.mysql.ActorMapper;
+import com.kishan.SpringPractice.models.mysql.ActorModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
@@ -14,7 +16,7 @@ import java.util.List;
 
 @Component
 public class ActorDAOImpl implements ActorDAO {
-    JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;
 
     private final String SQL_FIND_ACTOR = "SELECT * FROM actor WHERE actor_id = ?";
     private final String SQL_GET_COUNT = "SELECT COUNT(*) FROM actor";

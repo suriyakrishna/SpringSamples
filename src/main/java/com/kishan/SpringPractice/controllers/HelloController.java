@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/home")
 public class HelloController {
 
-    @Value("${USERNAME}")
+    @Value("${db.username}")
     private String username;
 
     @RequestMapping("/")
