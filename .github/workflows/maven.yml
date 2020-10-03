@@ -6,6 +6,8 @@ name: Spring Practice Repo CI/CD
 on:
   push:
     branches: [ mongo ]
+  pull-request:
+    branches: [ master ]
 
 jobs:
   build:
