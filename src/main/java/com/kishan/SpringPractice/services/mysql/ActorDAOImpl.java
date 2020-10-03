@@ -16,7 +16,7 @@ import java.util.List;
 
 @Component
 public class ActorDAOImpl implements ActorDAO {
-    JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;
 
     private final String SQL_FIND_ACTOR = "SELECT * FROM actor WHERE actor_id = ?";
     private final String SQL_GET_COUNT = "SELECT COUNT(*) FROM actor";
