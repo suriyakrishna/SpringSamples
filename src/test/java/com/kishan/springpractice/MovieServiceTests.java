@@ -1,6 +1,6 @@
 package com.kishan.springpractice;
 
-import com.kishan.springpractice.configs.SpringMongoOperations;
+import com.kishan.springpractice.components.mongo.SpringMongoOperations;
 import com.kishan.springpractice.models.mongo.mflix.Comment;
 import com.kishan.springpractice.models.mongo.mflix.CommentResponse;
 import com.kishan.springpractice.models.mongo.mflix.Movie;

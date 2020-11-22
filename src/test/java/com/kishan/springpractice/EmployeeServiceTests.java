@@ -1,6 +1,6 @@
 package com.kishan.springpractice;
 
-import com.kishan.springpractice.configs.SpringMongoOperations;
+import com.kishan.springpractice.components.mongo.SpringMongoOperations;
 import com.kishan.springpractice.exception.RequestException;
 import com.kishan.springpractice.models.mongo.Employee;
 import com.kishan.springpractice.services.mongo.EmployeeService;

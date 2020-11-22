@@ -1,4 +1,4 @@
-package com.kishan.springpractice.configs;
+package com.kishan.springpractice.components.mongo;
 
 import com.kishan.springpractice.models.mongo.Employee;
 import com.kishan.springpractice.models.mongo.mflix.Comment;
