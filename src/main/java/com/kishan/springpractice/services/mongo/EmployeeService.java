@@ -1,6 +1,6 @@
 package com.kishan.springpractice.services.mongo;
 
-import com.kishan.springpractice.components.mongo.SpringMongoOperations;
+import com.kishan.springpractice.repos.SpringMongoOperations;
 import com.kishan.springpractice.exception.RequestException;
 import com.kishan.springpractice.models.mongo.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
