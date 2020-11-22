@@ -1,6 +1,6 @@
-package com.kishan.SpringPractice;
+package com.kishan.springpractice;
 
-import com.kishan.SpringPractice.controllers.HelloController;
+import com.kishan.springpractice.controllers.HelloController;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

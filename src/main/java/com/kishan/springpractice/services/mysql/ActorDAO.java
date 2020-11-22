@@ -1,6 +1,6 @@
-package com.kishan.SpringPractice.services.mysql;
+package com.kishan.springpractice.services.mysql;
 
-import com.kishan.SpringPractice.models.mysql.ActorModel;
+import com.kishan.springpractice.models.mysql.ActorModel;
 
 import java.util.List;
 

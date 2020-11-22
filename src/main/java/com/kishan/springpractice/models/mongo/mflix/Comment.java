@@ -1,4 +1,4 @@
-package com.kishan.SpringPractice.models.mongo.mflix;
+package com.kishan.springpractice.models.mongo.mflix;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

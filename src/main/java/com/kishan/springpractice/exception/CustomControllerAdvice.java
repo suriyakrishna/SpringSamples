@@ -1,4 +1,4 @@
-package com.kishan.SpringPractice.exception;
+package com.kishan.springpractice.exception;
 
 import com.mongodb.MongoException;
 import org.springframework.http.HttpHeaders;

@@ -1,4 +1,4 @@
-package com.kishan.SpringPractice;
+package com.kishan.springpractice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

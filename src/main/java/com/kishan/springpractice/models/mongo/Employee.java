@@ -1,22 +1,30 @@
-package com.kishan.SpringPractice.models.mongo;
+package com.kishan.springpractice.models.mongo;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiResponse;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "Employee")
+@ApiModel(description = "Employee Model Definition")
 public class Employee {
 
     @Id
+    @ApiModelProperty(value = "Employee's id")
     private String id;
+    @ApiModelProperty(value = "Employee's firstName")
     private String firstName;
+    @ApiModelProperty(value = "Employee's lastName")
     private String lastName;
-    private int age;
+    @ApiModelProperty(value = "Employee's age")
+    private Integer age;
 
     public Employee() {
 
     }
 
-    public Employee(String id, String firstName, String lastName, int age) {
+    public Employee(String id, String firstName, String lastName, Integer age) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -47,11 +55,11 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 }

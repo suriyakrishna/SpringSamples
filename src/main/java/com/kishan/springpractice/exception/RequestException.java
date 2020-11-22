@@ -1,4 +1,4 @@
-package com.kishan.SpringPractice.exception;
+package com.kishan.springpractice.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

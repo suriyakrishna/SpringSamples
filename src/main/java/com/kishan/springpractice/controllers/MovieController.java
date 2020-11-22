@@ -1,14 +1,11 @@
-package com.kishan.SpringPractice.controllers;
+package com.kishan.springpractice.controllers;
 
-import com.kishan.SpringPractice.models.mongo.mflix.CommentResponse;
-import com.kishan.SpringPractice.models.mongo.mflix.Movie;
-import com.kishan.SpringPractice.models.mongo.mflix.MovieResponse;
-import com.kishan.SpringPractice.services.mongo.MovieService;
+import com.kishan.springpractice.models.mongo.mflix.CommentResponse;
+import com.kishan.springpractice.models.mongo.mflix.Movie;
+import com.kishan.springpractice.models.mongo.mflix.MovieResponse;
+import com.kishan.springpractice.services.mongo.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -43,12 +40,12 @@ public class MovieController {
         return movieService.getTopTenMovieByYear(year);
     }
 
-    @RequestMapping(value = "/comments/movieId/{movieId}")
+    @GetMapping(value = "/comments/movieId/{movieId}")
     public List<CommentResponse> getCommentsByMovieId(@PathVariable(name = "movieId") String movieId) {
         return movieService.getMovieCommentsByMovieId(movieId);
     }
 
-    @RequestMapping(value = "/comments/movieTitle/{movieTitle}")
+    @GetMapping(value = "/comments/movieTitle/{movieTitle}")
     public List<CommentResponse> getCommentsByMovieTitle(@PathVariable(name = "movieTitle") String movieTitle) {
         return movieService.getMovieCommentsByMovieTitle(movieTitle);
     }

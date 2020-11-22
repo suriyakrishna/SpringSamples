@@ -1,9 +1,9 @@
-package com.kishan.SpringPractice;
+package com.kishan.springpractice;
 
-import com.kishan.SpringPractice.configs.SpringMongoOperations;
-import com.kishan.SpringPractice.exception.RequestException;
-import com.kishan.SpringPractice.models.mongo.Employee;
-import com.kishan.SpringPractice.services.mongo.EmployeeService;
+import com.kishan.springpractice.configs.SpringMongoOperations;
+import com.kishan.springpractice.exception.RequestException;
+import com.kishan.springpractice.models.mongo.Employee;
+import com.kishan.springpractice.services.mongo.EmployeeService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,8 @@ import java.util.List;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.nullable;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.verify;
 import static org.mockito.MockitoAnnotations.initMocks;
@@ -87,7 +88,7 @@ public class EmployeeServiceTests {
     @Test
     @DisplayName("Update Employee")
     void updateEmployee() {
-        employeeService.updateEmployee(employeeList.get(1));
+        employeeService.updateEmployee(employeeList.get(1), "1");
     }
 
 }

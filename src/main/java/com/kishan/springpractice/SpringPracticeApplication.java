@@ -1,4 +1,4 @@
-package com.kishan.SpringPractice;
+package com.kishan.springpractice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

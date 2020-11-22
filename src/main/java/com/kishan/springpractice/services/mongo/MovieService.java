@@ -1,10 +1,10 @@
-package com.kishan.SpringPractice.services.mongo;
+package com.kishan.springpractice.services.mongo;
 
-import com.kishan.SpringPractice.configs.SpringMongoOperations;
-import com.kishan.SpringPractice.models.mongo.mflix.Comment;
-import com.kishan.SpringPractice.models.mongo.mflix.CommentResponse;
-import com.kishan.SpringPractice.models.mongo.mflix.Movie;
-import com.kishan.SpringPractice.models.mongo.mflix.MovieResponse;
+import com.kishan.springpractice.configs.SpringMongoOperations;
+import com.kishan.springpractice.models.mongo.mflix.Comment;
+import com.kishan.springpractice.models.mongo.mflix.CommentResponse;
+import com.kishan.springpractice.models.mongo.mflix.Movie;
+import com.kishan.springpractice.models.mongo.mflix.MovieResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

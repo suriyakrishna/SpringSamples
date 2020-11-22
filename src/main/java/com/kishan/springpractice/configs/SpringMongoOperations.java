@@ -1,15 +1,16 @@
-package com.kishan.SpringPractice.configs;
+package com.kishan.springpractice.configs;
 
-import com.kishan.SpringPractice.models.mongo.Employee;
-import com.kishan.SpringPractice.models.mongo.mflix.Comment;
-import com.kishan.SpringPractice.models.mongo.mflix.CommentResponse;
-import com.kishan.SpringPractice.models.mongo.mflix.Movie;
+import com.kishan.springpractice.models.mongo.Employee;
+import com.kishan.springpractice.models.mongo.mflix.Comment;
+import com.kishan.springpractice.models.mongo.mflix.CommentResponse;
+import com.kishan.springpractice.models.mongo.mflix.Movie;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -53,8 +54,17 @@ public class SpringMongoOperations {
         mongoOperations.insert(employee);
     }
 
-    public void updateRecord(Employee employee) {
-        mongoOperations.save(employee);
+    public void updateRecord(Employee employee, String id) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("_id").is(id));
+        Update update = new Update();
+        if (employee.getFirstName() != null)
+            update.set("firstName", employee.getFirstName());
+        if (employee.getLastName() != null)
+            update.set("lastName", employee.getLastName());
+        if (employee.getAge() != null)
+            update.set("age", employee.getAge());
+        mongoOperations.updateFirst(query, update, Employee.class);
     }
 
     public long getMoviesCount() {

@@ -1,7 +1,7 @@
-package com.kishan.SpringPractice.services.mysql;
+package com.kishan.springpractice.services.mysql;
 
-import com.kishan.SpringPractice.models.mysql.ActorMapper;
-import com.kishan.SpringPractice.models.mysql.ActorModel;
+import com.kishan.springpractice.models.mysql.ActorMapper;
+import com.kishan.springpractice.models.mysql.ActorModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;

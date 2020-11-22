@@ -1,11 +1,11 @@
-package com.kishan.SpringPractice;
+package com.kishan.springpractice;
 
-import com.kishan.SpringPractice.configs.SpringMongoOperations;
-import com.kishan.SpringPractice.models.mongo.mflix.Comment;
-import com.kishan.SpringPractice.models.mongo.mflix.CommentResponse;
-import com.kishan.SpringPractice.models.mongo.mflix.Movie;
-import com.kishan.SpringPractice.models.mongo.mflix.MovieResponse;
-import com.kishan.SpringPractice.services.mongo.MovieService;
+import com.kishan.springpractice.configs.SpringMongoOperations;
+import com.kishan.springpractice.models.mongo.mflix.Comment;
+import com.kishan.springpractice.models.mongo.mflix.CommentResponse;
+import com.kishan.springpractice.models.mongo.mflix.Movie;
+import com.kishan.springpractice.models.mongo.mflix.MovieResponse;
+import com.kishan.springpractice.services.mongo.MovieService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

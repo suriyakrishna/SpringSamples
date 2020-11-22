@@ -1,4 +1,4 @@
-package com.kishan.SpringPractice.models.mongo.mflix;
+package com.kishan.springpractice.models.mongo.mflix;
 
 public class Imdb {
     private Double rating;

@@ -1,8 +1,8 @@
-package com.kishan.SpringPractice.services.mongo;
+package com.kishan.springpractice.services.mongo;
 
-import com.kishan.SpringPractice.configs.SpringMongoOperations;
-import com.kishan.SpringPractice.exception.RequestException;
-import com.kishan.SpringPractice.models.mongo.Employee;
+import com.kishan.springpractice.configs.SpringMongoOperations;
+import com.kishan.springpractice.exception.RequestException;
+import com.kishan.springpractice.models.mongo.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +22,7 @@ public class EmployeeService {
     }
 
     public List<Employee> findEmployee(String id, String firstName, String lastName, String age) {
-        if (id == null && firstName == null && lastName == null && age == null){
+        if (id == null && firstName == null && lastName == null && age == null) {
             throw new RequestException("Atleast one parameter should be supplied with value");
         }
         return springMongoOperations.findEmployee(id, firstName, lastName, age);
@@ -36,7 +36,7 @@ public class EmployeeService {
         springMongoOperations.insertRecord(employee);
     }
 
-    public void updateEmployee(Employee employee){
-        springMongoOperations.updateRecord(employee);
+    public void updateEmployee(Employee employee, String id) {
+        springMongoOperations.updateRecord(employee, id);
     }
 }
