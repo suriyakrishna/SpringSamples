@@ -14,7 +14,6 @@ import javax.sql.DataSource;
 * */
 
 @Configuration
-@ComponentScan("com.kishan.SpringPractice")
 public class SpringJdbcConfig {
 
     @Value("${db.driver}")
