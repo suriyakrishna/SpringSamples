@@ -1,6 +1,7 @@
 package com.kishan.springpractice.repos;
 
 import com.kishan.springpractice.models.mongo.Employee;
+import com.kishan.springpractice.models.mongo.Product;
 import com.kishan.springpractice.models.mongo.mflix.Comment;
 import com.kishan.springpractice.models.mongo.mflix.CommentResponse;
 import com.kishan.springpractice.models.mongo.mflix.Movie;
@@ -14,6 +15,7 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -111,6 +113,12 @@ public class SpringMongoOperations {
         Query query = new Query();
         query.addCriteria(Criteria.where("title").is(title));
         return mongoOperations.findOne(query, Movie.class);
+    }
+
+    public Collection<Product> findProductByName(String name) {
+        Query q = new Query();
+        q.addCriteria(Criteria.where("name").is(name));
+        return mongoOperations.find(q, Product.class);
     }
 
 
